@@ -253,13 +253,17 @@
     border-color: color-gradient($SECONDARY_ORANGE, 40) !important
 
 @mixin info-button-colors
-  background-color: $primary-blue-darker !important
-  border-color: $primary-blue-darker !important
+  color: white
+  background-color: color-gradient($SECONDARY_MARINE_BLUE, 120) !important
+  border-color: color-gradient($SECONDARY_MARINE_BLUE, 120)
   &:hover
-    background-color: $primary-blue !important
-    border-color: $primary-blue !important
+    background-color: color-gradient($SECONDARY_MARINE_BLUE, 80) !important
+    border-color: color-gradient($SECONDARY_MARINE_BLUE, 80) !important
   &.no-border:hover
-    border-color: $primary-blue !important
+    border-color: color-gradient($SECONDARY_MARINE_BLUE, 80) !important
+  &.disabled, &[disabled]
+    background-color: color-gradient($SECONDARY_MARINE_BLUE, 40) !important
+    border-color: color-gradient($SECONDARY_MARINE_BLUE, 40) !important
 
 ////////////////////////////////////////////////////////////////////
 //
