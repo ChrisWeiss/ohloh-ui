@@ -43,6 +43,9 @@
 @mixin site-separator-background-color
   background-color: color-gradient($PRIMARY_DARK_GRAY, 60)
 
+@mixin ie-not-supported-text-color
+  color: color-gradient($WEB_RED, 100)
+
 ////////////////////////////////////////////////////////////////////
 //
 // Header/menu-bar mixins
@@ -90,6 +93,16 @@
 
 @mixin global-top-search-hover-border-color
   border-color: color-gradient($SECONDARY_MARINE_BLUE, 60) !important
+
+@mixin global-top-search-icon-color
+  color: white !important
+
+@mixin search-dropdown-link-color
+  color: color-gradient($SECONDARY_SLATE_BLUE, 120)
+
+@mixin search-dropdown-link-hover-colors
+  background-color: color-gradient($SECONDARY_MARINE_BLUE, 100)
+  color: white
 
 ////////////////////////////////////////////////////////////////////
 //
@@ -264,6 +277,10 @@
   &.disabled, &[disabled]
     background-color: color-gradient($SECONDARY_MARINE_BLUE, 40) !important
     border-color: color-gradient($SECONDARY_MARINE_BLUE, 40) !important
+
+@mixin search-button-hover-colors
+  background-color: color-gradient($SECONDARY_SLATE_BLUE, 120) !important
+  border-color: color-gradient($SECONDARY_SLATE_BLUE, 120) !important
 
 ////////////////////////////////////////////////////////////////////
 //
